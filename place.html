@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Eric Kwakye Boateng">
+        <meta name="description"
+            content="Discover Ghana, a vibrant West African country known for its rich culture, history, and scenic landscapes. Learn key facts, weather conditions, and national highlights.">
+        <title>Ghana</title>
+        <link rel="stylesheet" href="styles/place.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <script src="scripts/place.js" defer></script>
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Ghana</h1>
+        </header>
+
+        <main>
+
+            <section class="hero">
+                <picture>
+                    <source srcset="images/ghana-beach-large.webp" media="(min-width: 1000px)">
+                    <source srcset="images/ghana-beach-medium.webp" media="(min-width: 600px)">
+                    <img src="images/ghana-beach-small.webp" alt="Beautiful beach coastline in Ghana">
+                </picture>
+            </section>
+
+            <section class="data">
+                <h2>Country Data</h2>
+                <p><strong>Area:</strong> 238,535 sq km</p>
+                <p><strong>Population:</strong> 33,000,000+</p>
+                <p><strong>Capital:</strong> Accra</p>
+                <p><strong>Languages:</strong> English (Official), Akan, Ewe, Ga</p>
+                <p><strong>Currency:</strong> Ghanaian Cedi (GHS)</p>
+                <p><strong>Time Zone:</strong> GMT</p>
+                <p><strong>Calling Code:</strong> +233</p>
+                <p><strong>Internet TLD:</strong> .gh</p>
+            </section>
+
+            <section class="weather">
+                <h2>Weather</h2>
+
+                <img src="images/weather.svg" alt="Weather icon" class="weather-icon">
+
+                <p><strong>Temperature:</strong> <span id="temp">32</span> °C</p>
+                <p><strong>Conditions:</strong> Sunny</p>
+                <p><strong>Wind:</strong> <span id="wind">8</span> km/h</p>
+                <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>© <span id="year"></span> 🌍 Eric Kwakye Boateng 🌍 Ghana</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </footer>
+    </body>
+
+</html>
