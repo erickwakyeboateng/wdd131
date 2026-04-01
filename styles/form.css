@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+}
+
+.header {
+  background-color: #4b004b;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.form {
+  background-color: #d6cfd4;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 1.5rem;
+}
+
+legend {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.rating {
+  display: flex;
+  justify-content: space-between;
+  max-width: 500px;
+  margin-top: 0.5rem;
+}
+
+.rating label {
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+fieldset div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.4rem 0;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.5rem;
+  background-color: #e5e5e5;
+  border: 1px solid #aaa;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #d5d5d5;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #4b004b;
+}
+
+.footer {
+  background-color: #4b004b;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+  .rating {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
