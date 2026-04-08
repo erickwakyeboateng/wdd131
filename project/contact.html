@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Eric Kwakye Boateng">
+        <meta name="description" content="References and credits for the Discover Ghana educational project.">
+        <title>Discover Ghana – Contact</title>
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/mobile-styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500&display=swap"
+            rel="stylesheet">
+        <script src="scripts/scripts.js" defer></script>
+    </head>
+
+    <body>
+
+        <header>
+            <nav class="navbar">
+                <div class="navbar-inner">
+                    <a href="index.html" class="logo-area">
+                        <div class="logo-flag" aria-hidden="true">
+                            <span class="flag-red"></span>
+                            <span class="flag-gold"></span>
+                            <span class="flag-green"></span>
+                        </div>
+                        <span class="logo-text">Discover <span>Ghana</span></span>
+                    </a>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="attractions.html">Tourist Sites</a></li>
+                        <li><a href="culture.html">Culture</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html" class="active">Contact</a></li>
+                    </ul>
+                    <button class="hamburger" id="hamburger-btn" aria-label="Toggle menu">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </nav>
+            <div class="mobile-menu" id="mobile-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="attractions.html">Tourist Sites</a></li>
+                    <li><a href="culture.html">Culture</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <section class="section-container">
+                <div class="section-header">
+                    <h1 class="section-title">Contact Us</h1>
+                    <div class="section-divider divider-centered"></div>
+                    <p class="section-description">Planning a trip or want to learn more? Send us a message.</p>
+                </div>
+
+                <div class="contact-wrapper">
+                    <form id="contact-form" action="#" method="POST">
+
+                        <div class="form-group">
+                            <label for="name">Full Name*</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address*</label>
+                            <input type="email" id="email" class="form-control" placeholder="eric@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" class="form-control">
+                                <option value="" disabled selected>Select an option</option>
+                                <option value="tourism">Tourism Inquiry</option>
+                                <option value="culture">Cultural Events</option>
+                                <option value="general">General Question</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message*</label>
+                            <textarea id="message" rows="5" class="form-control textarea-resize"
+                                placeholder="How can we help you?" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary btn-block">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-inner">
+                <div class="logo-area footer-logo">
+                    <span class="logo-text">Discover <span>Ghana</span></span>
+                </div>
+                <p class="footer-copyright">
+                    &copy; <span id="current-year"></span> Discover Ghana. All rights reserved. |
+                    <a href="references.html" style="color: var(--gold); text-decoration: none;">References</a>
+                </p>
+        
+                <p class="footer-copyright visitor-count-text">
+                    Page Visits: <span id="visit-count-display"></span>
+                </p>
+            </div>
+        </footer>
+
+    </body>
+
+</html>

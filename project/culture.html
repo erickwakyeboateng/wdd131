@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Eric Kwakye Boateng">
+        <meta name="description" content="References and credits for the Discover Ghana educational project.">
+        <title>Discover Ghana – Culture</title>
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/mobile-sytles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500&display=swap"
+            rel="stylesheet">
+        <script src="scripts/scripts.js" defer></script>
+    </head>
+
+    <body>
+
+        <header>
+            <nav class="navbar">
+                <div class="navbar-inner">
+                    <a href="index.html" class="logo-area">
+                        <div class="logo-flag" aria-hidden="true">
+                            <span class="flag-red"></span>
+                            <span class="flag-gold"></span>
+                            <span class="flag-green"></span>
+                        </div>
+                        <span class="logo-text">Discover <span>Ghana</span></span>
+                    </a>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="attractions.html">Tourist Sites</a></li>
+                        <li><a href="culture.html" class="active">Culture</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <button class="hamburger" id="hamburger-btn" aria-label="Toggle menu">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </nav>
+            <div class="mobile-menu" id="mobile-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="attractions.html">Tourist Sites</a></li>
+                    <li><a href="culture.html" class="active">Culture</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <section class="section-container">
+                <div class="section-header">
+                    <h1 class="section-title">Rich Ghanaian Culture</h1>
+                    <div class="section-divider divider-centered"></div>
+                    <p class="section-description">Immerse yourself in the vibrant traditions, colorful clothing, and
+                        delicious cuisine that define the spirit of Ghana.</p>
+                </div>
+
+                <div class="intro-grid feature-row">
+                    <div class="intro-img-wrap">
+                        <img src="images/traditional-kente-cloth.webp" alt="Traditional Kente Cloth" loading="lazy">
+                    </div>
+                    <div>
+                        <h2 class="section-title feature-title">Art & Textiles (Kente)</h2>
+                        <p class="intro-text">Kente cloth is arguably the most famous Ghanaian cultural export. Woven on
+                            traditional wooden looms, these bright, geometric fabrics originally served as royal attire.
+                            Today, Kente represents prestige, heritage, and pride, with each distinct color and pattern
+                            carrying specific philosophical and historical meanings.</p>
+                    </div>
+                </div>
+
+                <div class="intro-grid feature-row">
+                    <div class="content-order-2">
+                        <h2 class="section-title feature-title">Festivals & Music</h2>
+                        <p class="intro-text">Ghanaians celebrate numerous festivals year-round, honoring ancestors,
+                            celebrating harvests, and purifying communities. Events like the Homowo, Chale Wote Street
+                            Art Festival, and Aboakyer are marked by rhythmic drumming, intricate traditional dancing,
+                            and communal joy.</p>
+                    </div>
+                    <div class="intro-img-wrap content-order-1">
+                        <img src="images/ghanaian-festival.webp" alt="Ghanaian Festival" loading="lazy">
+                    </div>
+                </div>
+
+                <div class="intro-grid">
+                    <div class="intro-img-wrap">
+                        <img src="images/ghanaian-cuisine.webp" alt="Delicious Ghanaian Cuisine" loading="lazy">
+                    </div>
+                    <div>
+                        <h2 class="section-title feature-title">Culinary Delights</h2>
+                        <p class="intro-text">Ghanaian food is flavorful, hearty, and communal. It include Kenkey,
+                            Waakye (rice and beans), and Fufu served with light soup or groundnut soup. Don't
+                            leave without trying local ripe plantain, pear and tilapia with kontomire leaves.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-inner">
+                <div class="logo-area footer-logo">
+                    <span class="logo-text">Discover <span>Ghana</span></span>
+                </div>
+                <p class="footer-copyright">
+                    &copy; <span id="current-year"></span> Discover Ghana. All rights reserved. |
+                    <a href="references.html" style="color: var(--gold); text-decoration: none;">References</a>
+                </p>
+        
+                <p class="footer-copyright visitor-count-text">
+                    Page Visits: <span id="visit-count-display"></span>
+                </p>
+            </div>
+        </footer>
+
+    </body>
+
+</html>

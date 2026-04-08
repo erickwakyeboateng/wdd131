@@ -1,0 +1,18 @@
+@media (max-width: 900px) {
+  .nav-links {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+
+  .intro-grid,
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .content-order-1,
+  .content-order-2 {
+    order: unset;
+  }
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Eric Kwakye Boateng">
+        <meta name="description" content="References and credits for the Discover Ghana educational project.">
+        <title>Discover Ghana – Tourist Attractions</title>
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/mobile-sytles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500&display=swap"
+            rel="stylesheet">
+        <script src="scripts/scripts.js" defer></script>
+    </head>
+
+    <body>
+
+        <header>
+            <nav class="navbar">
+                <div class="navbar-inner">
+                    <a href="index.html" class="logo-area">
+                        <div class="logo-flag" aria-hidden="true">
+                            <span class="flag-red"></span>
+                            <span class="flag-gold"></span>
+                            <span class="flag-green"></span>
+                        </div>
+                        <span class="logo-text">Discover <span>Ghana</span></span>
+                    </a>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="attractions.html" class="active">Tourist Sites</a></li>
+                        <li><a href="culture.html">Culture</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <button class="hamburger" id="hamburger-btn" aria-label="Toggle menu">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </nav>
+            <div class="mobile-menu" id="mobile-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="attractions.html" class="active">Tourist Sites</a></li>
+                    <li><a href="culture.html">Culture</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <section class="section-container">
+                <div class="section-header">
+                    <h1 class="section-title">Top Tourist Attractions</h1>
+                    <div class="section-divider divider-centered"></div>
+                    <p class="section-description">Explore the breathtaking landscapes, exotic wildlife, and monumental
+                        historical sites that make Ghana the crown jewel of West African tourism.</p>
+                </div>
+
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-img-wrap">
+                            <img src="images/cape-coast-castle.webp" alt="Cape Coast Castle" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <span class="card-tag">History</span>
+                            <h3>Cape Coast Castle</h3>
+                            <p>A UNESCO World Heritage Site with a profound history, standing as a poignant reminder of
+                                the transatlantic slave trade. A must-visit for historical education and reflection.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img-wrap">
+                            <img src="images/kakum-national-park.webp" alt="Kakum National Park" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <span class="card-tag">Nature</span>
+                            <h3>Kakum National Park</h3>
+                            <p>Experience the thrill of walking on one of the few canopy walkways in the world,
+                                suspended 30 meters above the lush rainforest floor, surrounded by rare flora and fauna.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img-wrap">
+                            <img src="images/mole-national-park.webp" alt="Mole National Park" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <span class="card-tag">Wildlife</span>
+                            <h3>Mole National Park</h3>
+                            <p>Embark on an unforgettable safari in Ghana's largest wildlife refuge. Spot magnificent
+                                African elephants, antelopes, baboons, and hundreds of bird species in their natural
+                                habitat.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-inner">
+                <div class="logo-area footer-logo">
+                    <span class="logo-text">Discover <span>Ghana</span></span>
+                </div>
+                <p class="footer-copyright">
+                    &copy; <span id="current-year"></span> Discover Ghana. All rights reserved. |
+                    <a href="references.html" style="color: var(--gold); text-decoration: none;">References</a>
+                </p>
+
+                <p class="footer-copyright visitor-count-text">
+                    Page Visits: <span id="visit-count-display"></span>
+                </p>
+            </div>
+        </footer>
+
+    </body>
+
+</html>
